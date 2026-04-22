@@ -16,7 +16,7 @@ See pin assignment and limitations: https://circuits4you.com/2018/12/31/esp32-de
 #define tx_key_line_4 0
 #define tx_key_line_5 0
 #define tx_key_line_6 0
-#define sidetone_line 23 //5         // connect a speaker for sidetone
+#define sidetone_line 0 //5         // connect a speaker for sidetone
 #define potentiometer 39 //A3 - VN pin 0 // Speed potentiometer (0 to 3.3V) Use pot from 1k to 10k
 #define ptt_tx_1 26 //4              // PTT ("push to talk") lines
 #define ptt_tx_2 0              //   Can be used for keying fox transmitter, T/R switch, or keying slow boatanchors
@@ -101,7 +101,7 @@ FEATURE_SIDETONE_SWITCH
 #endif //FEATURE_PTT_INTERLOCK
 
 #ifdef FEATURE_STRAIGHT_KEY
-  #define pin_straight_key 1 //TXD0
+  #define pin_straight_key 21 //TXD0
 #endif //FEATURE_STRAIGHT_KEY
 
 // FEATURE_CW_DECODER & OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR
